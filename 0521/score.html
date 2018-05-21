@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Score</title>
+	<script>
+		function judge(){
+			score = document.getElementById("a").value;			
+			var text;
+			if(score>=60){
+				text="及格"
+			}else{
+				text="不及格"
+			}
+			document.getElementById("b").innerHTML=text 
+		}
+	</script>
+</head>
+<body>
+<input type="text" id="a">
+<button onclick="judge()">run</button>
+<p id="b"></p>
+</body>
+</html>

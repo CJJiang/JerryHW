@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<script>
+		function plus(){
+				num1 = document.getElementById("a").value;
+				num2 = document.getElementById("b").value;
+				result = parseInt(num1)+parseInt(num2);
+				document.getElementById("c").innerHTML=result; 
+			}
+		function minus(){
+				num1 = document.getElementById("a").value;
+				num2 = document.getElementById("b").value;
+				result = parseInt(num1)-parseInt(num2);
+				document.getElementById("c").innerHTML=result; 
+			}
+		function multi(){
+				num1 = document.getElementById("a").value;
+				num2 = document.getElementById("b").value;
+				result = parseInt(num1)*parseInt(num2);
+				document.getElementById("c").innerHTML=result; 
+			}
+		function divide(){
+				num1 = document.getElementById("a").value;
+				num2 = document.getElementById("b").value;
+				result = parseInt(num1)/parseInt(num2);
+				document.getElementById("c").innerHTML=result; 
+			}				
+	</script>
+</head>
+<body>
+<input type="number" id="a">
+<input type="number" id="b">	
+<button onclick="plus()">+</button>
+<button onclick="minus()">-</button>
+<button onclick="multi()">*</button>
+<button onclick="divide()">/</button>
+<button onclick="document.getElementById('a').value = '',document.getElementById('b').value = '',document.getElementById('c').innerHTML= ''">C</button>
+<h3>result:<p id="c"></p>
+</h3>
+</body>
+</html>
