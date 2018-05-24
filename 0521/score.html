@@ -6,10 +6,13 @@
 		function judge(){
 			score = document.getElementById("a").value;			
 			var text;
-			if(score>=60){
+			if(score>=60&&score<=100){
 				text="及格"
-			}else{
+			}
+			else if(score<60&&score>=0){
 				text="不及格"
+			}else{
+				text="分數輸入錯誤"
 			}
 			document.getElementById("b").innerHTML=text 
 		}
